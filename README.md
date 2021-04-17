@@ -21,7 +21,7 @@ If the user answers correctly, the user will gain a point and the next question 
 ****************************************
 
 <a name="demo"></a>
-### Quizzical Demo
+## Quizzical Demo
 
 ****************************************
 
