@@ -1,4 +1,4 @@
-# Quiz Master
+# Quizzical Master
 
 The Quizzical Quiz Master application is designed to validate your basic knowledge of HTML, CSS and JavaScript. It contains five(5) questions presented in no particular order. 
 Each question provides multiple choice of answers. When you choose to begin the quiz, a timer will display as questions are asked with multiple choice of answers.  
