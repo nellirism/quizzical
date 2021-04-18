@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./resources/css/normalized.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <script type="text/javascript" src="./resources/js/questions.js" defer></script>
+    <script type="text/javascript" src="./resources/js/scores.js" defer></script>
+    <script type="text/javascript" src="./resources/js/script.js" defer></script>
+    
+    <title>Quizzical Master</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Top fixed header (highscores and timer) -->
+        <header class="row">
+            <div class="col-md-6" id="Highscores">
+                <a href="./highscore.html">View Highscores</a>
+            </div>
+            <div class="col-md-6" id="timer">
+                Time: <span id="time">0</span>
+            </div>
+        </header>
+
+        <!-- Coding Challenge Title -->
+        <section id="title-section" class="show">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Qu<span class="ay">i</span>zz<span class="ay">i</span>cal Master Challenge</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="info">You have <span>15 seconds</span> to answer each question.</div>
+                    <div class="info">Once you have selected an answer, you cannot undo it.</div>
+                    <div class="info">Once the time is up, you can no longer select any option.</div> 
+                    <div class="info">You will get one point for every correct answer.</div>
+                    <div class="info">Fifteen (15) seconds will be deducted from the timer for every wrong answer.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="startbutton"><h1>Begin</h1></button>
+                </div>  
+            </div>
+        </section>
+
+        <!-- Coding Questions -->
+        <section id="quiz-section" class="hide">
+            <div class="row">
+                <div class="col-md-12 questions">
+                    <h3 id="question-title"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" id="choices"></div>      
+            </div>
+            <div class="feedbackx">
+                <div id="feedback" class="feedback hide"></div>
+            </div>
+        </section>
+
+        <!-- High Score Section -->
+        <section id="highscore-section" class="hide">
+            <div class="row">
+                <div id="high-score" class="col-md-12">
+                    <h2>Well Done!</h2>
+                    <h3>Your final score is <span id="final-score">0</span></h3>
+                    <label for="initials-area">Enter Your Initials:</label>
+                    <input type="text" name="initials-area" maxlength="4" id="initials">
+                    <button id="submit-button" type="submit">Submit</button>
+                </div>
+            </div>
+        </section>
+
+        
+
+    </div> 
+</body>
+</html>
